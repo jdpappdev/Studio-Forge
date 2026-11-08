@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "studio-forge": {
+      "type": "stdio",
+      "command": "bun",
+      "args": ["run", "start"],
+      "cwd": "${workspaceFolder}/mcp-server"
+    }
+  }
+}
