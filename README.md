@@ -1,5 +1,7 @@
 # Studio Forge
 
+[![Catalog checks](https://github.com/jdpappdev/Studio-Forge/actions/workflows/catalog-check.yml/badge.svg)](https://github.com/jdpappdev/Studio-Forge/actions/workflows/catalog-check.yml)
+
 **A focused design toolkit for coding agents.** Studio Forge brings together practical guidance for distinctive web design, product UI, motion, React implementation, and interface review, with a small read-only MCP server for searching that guidance.
 
 ## What's included
@@ -8,7 +10,7 @@
 - A curated guidance catalog at `knowledge/catalog.mjs`.
 - An optional [Model Context Protocol (MCP) server](mcp-server/) that exposes catalog search and workflow prompts.
 
-Studio Forge contains original summaries and adaptations. It does not bundle the referenced skills, assets, component libraries, external data, automatic hooks, or live-editing scripts. The skills identify their source inspirations; check upstream project terms before reusing third-party material.
+Studio Forge ships four focused skills and an original, searchable guidance catalog. They summarize and adapt selected upstream ideas; the repository does not redistribute upstream skill packs, sample media, component libraries, datasets, automatic hooks, or live-editing scripts. Each skill identifies its inspirations. Check upstream terms before reusing third-party material.
 
 ## Quick start
 
@@ -19,7 +21,13 @@ Studio Forge contains original summaries and adaptations. It does not bundle the
 
 ### Use the skills
 
-Open this repository in a compatible coding agent. The skills live in `.agents/skills/`; consult the agent's documentation if it requires a different discovery location.
+Install a single skill into the current project with the [Skills CLI](https://github.com/vercel-labs/skills):
+
+```sh
+npx skills add jdpappdev/Studio-Forge --skill frontend-design -a codex
+```
+
+Choose `frontend-design`, `motion-design`, `react-ui-engineering`, or `ui-ux-review` after `--skill`. Repeat the command for other skills. Add `-g` if you want the skill available across projects. To use all four directly, open the repository in a compatible coding agent; the skills live in `.agents/skills/`.
 
 ### Run the MCP server in VS Code
 
@@ -44,6 +52,10 @@ The server uses stdio and is read-only. It does not inspect or modify your proje
 
 The search domains are `design`, `ui-ux`, `design-system`, `motion`, `accessibility`, `responsive-design`, `react`, `review`, and `implementation`.
 
+### Example
+
+Search `redesign forms` in the `ui-ux` domain to get a checklist for preserving existing copy, routes, links, fields, handlers, and state. Ask `get_design_workflow` for the `motion` workflow to get a concise plan covering purpose, timing, interruption, reduced motion, and review.
+
 ## Repository map
 
 ```text
@@ -51,6 +63,8 @@ The search domains are `design`, `ui-ux`, `design-system`, `motion`, `accessibil
 knowledge/            Structured design guidance catalog
 mcp-server/           Read-only stdio MCP server
 docs/                 Review notes for substantive guidance revisions
+tests/                Catalog integrity checks
+.github/workflows/    Continuous integration
 .vscode/mcp.json      VS Code MCP server configuration
 ARCHITECTURE.md       Data flow and component boundaries
 CONTRIBUTING.md       Contribution workflow

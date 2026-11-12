@@ -19,6 +19,14 @@ Thanks for helping make Studio Forge more useful to people building web interfac
 
 ## Local checks
 
+Run the catalog integrity checks from the repository root:
+
+```sh
+node --test tests/catalog.test.mjs
+```
+
+These checks validate the catalog structure and source metadata. They do not exercise the MCP protocol or a rendered interface.
+
 Install dependencies and start the MCP server from `mcp-server/`:
 
 ```sh
@@ -26,7 +34,7 @@ bun install
 bun run start
 ```
 
-The server communicates over stdio, so starting it directly is useful as a smoke check but it will wait for an MCP client connection. For tool-level checks, use a compatible MCP client and exercise both tools, including an empty search result and each workflow task. This repository currently has no automated test or lint scripts.
+The server communicates over stdio, so starting it directly is useful as a smoke check but it will wait for an MCP client connection. For tool-level checks, use a compatible MCP client and exercise both tools, including an empty search result and each workflow task.
 
 Review your diff before submitting. Do not include `node_modules`, secrets, credentials, unrelated generated files, or copied source material without its required notices.
 

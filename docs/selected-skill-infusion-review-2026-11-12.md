@@ -4,7 +4,7 @@ Date: 2026-11-12
 
 ## Review type and scope
 
-This is a static instruction review of the four Studio Forge skills and their MCP workflow prompts. The baseline is the existing repository state at commit `742923f`; the candidate is the current working-tree change. No live agent comparison, browser review, or MCP client run was performed, so this report does not claim behavioral improvement.
+This is a static instruction review of the four Studio Forge skills and their MCP workflow prompts. The baseline is commit `742923f3ea8a1da14daec0d2bfd3948e661d4b5e`; the reviewed candidate was published in commit `201628b45f0b76965e34deb81a58cadb0595d2af`. No live agent comparison, browser review, or MCP client run was performed, so this report does not claim behavioral improvement.
 
 Criteria: retain distinctive product-led design; preserve working content and behavior during redesign; keep accessibility, keyboard/touch operation, responsive layout, and reduced motion explicit; keep performance advice evidence-based; maintain Studio Forge's read-only MCP boundary and source attribution.
 
