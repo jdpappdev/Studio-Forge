@@ -50,6 +50,7 @@ The search domains are `design`, `ui-ux`, `design-system`, `motion`, `accessibil
 .agents/skills/       Agent Skills
 knowledge/            Structured design guidance catalog
 mcp-server/           Read-only stdio MCP server
+docs/                 Review notes for substantive guidance revisions
 .vscode/mcp.json      VS Code MCP server configuration
 ARCHITECTURE.md       Data flow and component boundaries
 CONTRIBUTING.md       Contribution workflow

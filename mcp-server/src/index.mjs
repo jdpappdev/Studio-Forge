@@ -77,27 +77,30 @@ server.registerTool(
     const workflows = {
       design: [
         "Identify the audience, product domain, user goal, available content, and constraints.",
+        "Inspect existing design tokens and behavior; for redesigns, inventory the content and interactions that need to survive.",
         "Choose a specific visual direction and name familiar defaults to challenge.",
-        "Define hierarchy, tokens, composition, content structure, and imagery before implementation.",
-        "Render and review the result at desktop and narrow widths when a browser is available.",
+        "Define hierarchy, tokens, composition, content structure, key states, and imagery before implementation; build the key view first when it will set the direction.",
+        "Render and review the affected task path at supported desktop and narrow widths when a browser is available. Treat lint or taste scores as signals, not proof.",
       ],
       implement: [
         "Inspect the current stack, design system, and component primitives.",
-        "Build semantic, accessible controls and preserve existing behavior.",
-        "Keep responsive wrapping, focus, error, empty, loading, and reduced-motion states in scope.",
-        "Verify key interaction paths in the rendered interface when possible.",
+        "Inventory behavior that must survive, then build semantic, accessible controls that preserve it.",
+        "Keep responsive wrapping, focus, error, success, empty, loading, disabled, and reduced-motion states in scope.",
+        "Verify the affected interaction paths and narrow layouts in the rendered interface when possible.",
       ],
       review: [
         "Review purpose and hierarchy first, then task flow, accessibility, responsive behavior, and performance.",
-        "Rank findings by impact and cite concrete files and lines or rendered screen states.",
+        "Reserve blockers for confirmed task, accessibility, or supported-layout failures; rank polish by concrete user impact.",
+        "For redesigns, compare the result against existing copy, routes, links, fields, handlers, and state.",
+        "Cite concrete files and lines or rendered screen states.",
         "Separate observed defects from items that need browser verification.",
         "Keep the report focused on the highest-impact corrections.",
       ],
       motion: [
         "Decide whether motion is useful and name its purpose before choosing an effect.",
-        "Match intensity and duration to interaction frequency and platform conventions.",
+        "Specify the trigger, sequence, duration, easing, final state, and interaction frequency.",
         "Use the simplest existing tool and keep interruption behavior correct.",
-        "Ship reduced-motion and keyboard/touch behavior with the same change.",
+        "Ship reduced-motion and keyboard/touch behavior with the same change; inspect at relevant widths when a browser is available.",
       ],
     };
     return {

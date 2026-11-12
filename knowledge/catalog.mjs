@@ -5,7 +5,7 @@ export const guidance = [
     domain: "design",
     tags: ["brand", "landing page", "visual", "art direction", "anti-template", "inspiration"],
     text: "Start from the audience, product domain, and job to be done. Choose typography, palette, composition, and one signature detail that follow from that context. Name familiar defaults before deciding whether they fit. Use a memorable move sparingly and keep the supporting system coherent.",
-    sources: ["taste-skill", "anthropic-frontend-design", "ui-ux-pro-max", "interface-design", "superdesign", "kesslerio-ultimate"],
+    sources: ["taste-skill", "anthropic-frontend-design", "ui-ux-pro-max", "interface-design", "superdesign", "kesslerio-ultimate", "nutlope-hallmark"],
   },
   {
     id: "wireframe-and-tokens",
@@ -13,7 +13,7 @@ export const guidance = [
     domain: "design",
     tags: ["wireframe", "layout", "tokens", "responsive", "mobile", "states", "requirements"],
     text: "For a page or multi-step flow, sketch the structure before polishing its theme. Make the wireframe concrete enough to show content priority, navigation, responsive reading order, and important states. Then define a small set of tokens that express the selected visual direction instead of importing a generic preset.",
-    sources: ["superdesign", "ui-ux-pro-max", "anthropic-frontend-design"],
+    sources: ["superdesign", "ui-ux-pro-max", "anthropic-frontend-design", "nutlope-hallmark"],
   },
   {
     id: "product-ui-hierarchy",
@@ -37,7 +37,7 @@ export const guidance = [
     domain: "motion",
     tags: ["animation", "motion", "easing", "duration", "interaction", "reduced motion"],
     text: "First decide whether motion is needed, then name its purpose: feedback, state indication, spatial continuity, explanation, or rare delight. Match intensity to interaction frequency. Use existing motion tokens and the least complex suitable tool. Include reduced-motion and interruption behavior with the implementation.",
-    sources: ["emilkowalski-skills", "taste-skill", "ui-ux-pro-max"],
+    sources: ["emilkowalski-skills", "taste-skill", "ui-ux-pro-max", "motionsites-web-builder"],
   },
   {
     id: "motion-performance",
@@ -45,7 +45,7 @@ export const guidance = [
     domain: "motion",
     tags: ["animation performance", "transform", "opacity", "interrupt", "css", "web animations"],
     text: "Prefer transform and opacity for simple effects. Keep frequent interactions quick, avoid delaying keyboard-driven actions, and ensure rapid input cannot leave visual and semantic state out of sync. Reserve complex spring or gesture motion for cases that benefit from it.",
-    sources: ["emilkowalski-skills", "vercel-agent-skills"],
+    sources: ["emilkowalski-skills", "vercel-agent-skills", "motionsites-web-builder"],
   },
   {
     id: "accessible-interactions",
@@ -77,7 +77,7 @@ export const guidance = [
     domain: "review",
     tags: ["critique", "audit", "polish", "review", "usability", "quality"],
     text: "Review a focused component or flow against user intent. Check purpose, hierarchy, task flow, accessibility, responsive behavior, and supported performance concerns. Rank concrete findings by user impact, cite source lines or screen states, and separate observed defects from items requiring visual verification.",
-    sources: ["impeccable", "interface-design", "vercel-agent-skills"],
+    sources: ["impeccable", "interface-design", "vercel-agent-skills", "nutlope-hallmark"],
   },
   {
     id: "component-primitives",
@@ -86,5 +86,21 @@ export const guidance = [
     tags: ["shadcn", "components", "dialog", "menu", "combobox", "design system"],
     text: "For complex interactive controls, evaluate the project's existing accessible primitives and established libraries before implementing custom focus management and keyboard behavior. Favor composable components that can be styled to fit the product, and follow the repository's current stack.",
     sources: ["shadcn-ui", "emilkowalski-skills", "vercel-agent-skills"],
+  },
+  {
+    id: "redesign-preservation",
+    title: "Preserve a working product during redesign",
+    domain: "ui-ux",
+    tags: ["redesign", "preservation", "routes", "forms", "handlers", "state", "behavior"],
+    text: "Before a redesign, inventory the existing copy, routes, links, form fields, handlers, state, and relevant test hooks. Compare the result against that inventory; keep working behavior unless the user asks to change it, and report intentional removals or changes.",
+    sources: ["nutlope-hallmark", "anthropic-frontend-design"],
+  },
+  {
+    id: "quality-gates",
+    title: "Separate usability floors from craft preferences",
+    domain: "review",
+    tags: ["quality", "floor", "gates", "accessibility", "heuristics", "score", "lint"],
+    text: "Treat truthful content, accessible operation, working task-critical behavior, and supported-width usability as a minimum floor. Use stylistic conventions and automated scores as review signals, not universal pass/fail rules; explain the user impact of a deviation before ranking it as a defect.",
+    sources: ["nutlope-hallmark", "motionsites-web-builder"],
   },
 ];
