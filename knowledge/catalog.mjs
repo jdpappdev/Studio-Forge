@@ -48,6 +48,14 @@ export const guidance = [
     sources: ["emilkowalski-skills", "vercel-agent-skills", "motionsites-web-builder"],
   },
   {
+    id: "motion-technique-fit",
+    title: "Match the motion technique to the visual job",
+    domain: "motion",
+    tags: ["css", "svg", "canvas", "webgl", "three.js", "fallback", "interactive scene"],
+    text: "Use CSS for simple interface motion, SVG for vector path work, and Canvas or WebGL only for dense spatial scenes that justify the complexity. Reuse the project's installed stack, keep essential information outside canvas scenes, and provide a static or simpler fallback with reduced-motion and pause behavior where needed.",
+    sources: ["awesome-opus-animation"],
+  },
+  {
     id: "accessible-interactions",
     title: "Make every interaction operable and understandable",
     domain: "accessibility",
