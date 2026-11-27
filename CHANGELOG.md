@@ -12,3 +12,4 @@ Notable changes to Studio Forge are recorded here. This project has not made a t
 - Recorded a static revision review; behavior-level improvement remains unverified until these workflows are exercised on representative projects.
 - Added skill-install instructions and a practical MCP example to the README, clarified private reporting routes, and pinned the skill-review report to its baseline and candidate commits.
 - Added a Node-based catalog integrity check and a GitHub Actions workflow to run it on pushes and pull requests.
+- Added a reusable full-stack project master prompt with optional Studio Forge design guidance for substantial application builds.

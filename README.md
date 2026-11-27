@@ -9,6 +9,7 @@
 - Four reusable [Agent Skills](.agents/skills/) for frontend design, motion design, React UI engineering, and UI/UX review.
 - A curated guidance catalog at `knowledge/catalog.mjs`.
 - An optional [Model Context Protocol (MCP) server](mcp-server/) that exposes catalog search and workflow prompts.
+- An optional [full-stack project master prompt](templates/full-stack-project-master-prompt.md) for substantial application builds, designed to work alongside the focused design skills.
 
 Studio Forge ships four focused skills and an original, searchable guidance catalog. They summarize and adapt selected upstream ideas; the repository does not redistribute upstream skill packs, sample media, component libraries, datasets, automatic hooks, or live-editing scripts. Each skill identifies its inspirations. Check upstream terms before reusing third-party material.
 
@@ -56,10 +57,15 @@ The search domains are `design`, `ui-ux`, `design-system`, `motion`, `accessibil
 
 Search `redesign forms` in the `ui-ux` domain to get a checklist for preserving existing copy, routes, links, fields, handlers, and state. Ask `get_design_workflow` for the `motion` workflow to get a concise plan covering purpose, timing, interruption, reduced motion, and review.
 
+## Use the full-stack project prompt
+
+For a substantial application build, copy the [master prompt](templates/full-stack-project-master-prompt.md), replace its project brief with the real requirements, and use it as an implementation frame. Keep the four focused skills and MCP as targeted design support; small fixes do not need the full prompt.
+
 ## Repository map
 
 ```text
 .agents/skills/       Agent Skills
+templates/            Reusable project prompts
 knowledge/            Structured design guidance catalog
 mcp-server/           Read-only stdio MCP server
 docs/                 Review notes for substantive guidance revisions
