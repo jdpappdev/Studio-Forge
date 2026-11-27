@@ -5,6 +5,7 @@ Studio Forge is a local-first collection of agent instructions and curated refer
 ## Components
 
 - **Skills (`.agents/skills/`)** — focused Markdown instructions loaded by compatible coding agents. Each skill names its source inspirations where relevant.
+- **Templates (`templates/`)** — optional copyable prompts for substantial project work; they are not loaded or executed by the MCP server.
 - **Guidance catalog (`knowledge/catalog.mjs`)** — static records containing an ID, title, domain, tags, guidance text, and source identifiers.
 - **MCP server (`mcp-server/src/index.mjs`)** — registers two stdio tools and imports the catalog directly. `search_design_guidance` scores text matches in titles, tags, and guidance; `get_design_workflow` returns a task-specific checklist.
 - **VS Code configuration (`.vscode/mcp.json`)** — starts the local server with Bun, using the workspace folder as its base.

@@ -15,6 +15,6 @@ Harassment, discrimination, personal attacks, intimidation, doxxing, and unwelco
 
 ## Enforcement
 
-Project maintainers are responsible for clarifying and enforcing these expectations. If you experience or witness unacceptable behavior, contact the maintainers privately through a channel listed by the repository owner. Reports will be handled as confidentially as practical. Maintainers may remove content or restrict participation when needed to protect the community.
+Project maintainers are responsible for clarifying and enforcing these expectations. If you experience or witness unacceptable behavior, contact the owner through the contact options on the [jdpappdev GitHub profile](https://github.com/jdpappdev). Do not include personal or sensitive details in a public issue. Reports will be handled as confidentially as practical. Maintainers may remove content or restrict participation when needed to protect the community.
 
 This policy applies in project spaces and when someone is representing the project publicly.

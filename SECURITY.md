@@ -4,7 +4,7 @@ Studio Forge is a local-first set of Markdown guidance and a small stdio MCP ser
 
 ## Reporting a vulnerability
 
-Please do not publish sensitive vulnerability details in a public issue. Use the repository host's private vulnerability-reporting feature when available, or contact the maintainers through a private channel listed by the repository owner.
+Please do not publish sensitive vulnerability details in a public issue. Use GitHub's **Report a vulnerability** option on the repository's Security tab. If that option is unavailable, contact the owner through the contact options on the [jdpappdev GitHub profile](https://github.com/jdpappdev) to arrange a private route before sending sensitive details.
 
 Include the affected version or commit, the relevant component, steps to reproduce, and the impact. Avoid sharing real credentials, private user data, or destructive proof-of-concept payloads.
 
