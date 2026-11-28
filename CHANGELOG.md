@@ -4,6 +4,7 @@ Notable changes to Studio Forge are recorded here. This project has not made a t
 
 ## Unreleased
 
+- Strengthened the full-stack project workflow with risk-first slices, explicit contracts for consequential logic, proportionate verification, a fresh review pass, and evidence-based handoffs. Adapted workflow ideas from 100x Engineer Skill; no upstream code or skill text was copied.
 - Established the initial skill collection for frontend design, motion design, React UI engineering, and UI/UX review.
 - Added a source-attributed guidance catalog and read-only stdio MCP server.
 - Added VS Code MCP configuration and repository documentation.

@@ -9,7 +9,7 @@
 - Four reusable [Agent Skills](.agents/skills/) for frontend design, motion design, React UI engineering, and UI/UX review.
 - A curated guidance catalog at `knowledge/catalog.mjs`.
 - An optional [Model Context Protocol (MCP) server](mcp-server/) that exposes catalog search and workflow prompts.
-- An optional [full-stack project master prompt](templates/full-stack-project-master-prompt.md) for substantial application builds, designed to work alongside the focused design skills.
+- An optional [full-stack project master prompt](templates/full-stack-project-master-prompt.md) for substantial application builds, with risk-first planning, critical-logic contracts, focused verification, a separate review pass, and evidence-based delivery.
 
 Studio Forge ships four focused skills and an original, searchable guidance catalog. They summarize and adapt selected upstream ideas; the repository does not redistribute upstream skill packs, sample media, component libraries, datasets, automatic hooks, or live-editing scripts. Each skill identifies its inspirations. Check upstream terms before reusing third-party material.
 
@@ -59,7 +59,7 @@ Search `redesign forms` in the `ui-ux` domain to get a checklist for preserving 
 
 ## Use the full-stack project prompt
 
-For a substantial application build, copy the [master prompt](templates/full-stack-project-master-prompt.md), replace its project brief with the real requirements, and use it as an implementation frame. Keep the four focused skills and MCP as targeted design support; small fixes do not need the full prompt.
+For a substantial application build, use the [master prompt](templates/full-stack-project-master-prompt.md) as an implementation frame and replace its brief with the real requirements. It scales the work to the risk: small changes stay lightweight, while consequential logic gets explicit contracts and edge-case checks. The final review can be a self-review; a second model or agent is optional and should be used only when available, authorized, and worth the extra cost. Keep the four focused skills and MCP as targeted design support.
 
 ## Repository map
 
